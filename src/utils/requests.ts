@@ -1,7 +1,10 @@
-/* eslint-disable import/no-anonymous-default-export */
 const API_KEY = process.env.API_KEY
 
-export default {
+interface Requests {
+    [key: string]: any;
+}
+
+export const requests: Requests = {
     fetchTrending: {
         title: "Trending",
         url: `/trending/all/week?api_key=${API_KEY}&language=en-US`
