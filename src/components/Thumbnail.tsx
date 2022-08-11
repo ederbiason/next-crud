@@ -1,5 +1,6 @@
+/* eslint-disable react/display-name */
 import Image from 'next/image'
-import React from 'react'
+import React, { forwardRef } from 'react'
 
 import { ResultsInterface } from '../types/interface'
 import { ThumbUpIcon } from "@heroicons/react/outline"
@@ -8,11 +9,11 @@ interface IProps {
     result: ResultsInterface
 }
 
-export const Thumbnail = ({ result }: IProps) => {
+export const Thumbnail = forwardRef(({ result }: IProps, ref) => {
   const BASE_POSTER_URL = "https://image.tmdb.org/t/p/original/"
 
   return (
-    <div className="group cursor-pointer p-2 transiton duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
+    <div ref={ref} className="group cursor-pointer p-2 transiton duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
         <Image 
             layout="responsive"
             height={1080}
@@ -42,4 +43,4 @@ export const Thumbnail = ({ result }: IProps) => {
         </div>
     </div>
   )
-}
+})
