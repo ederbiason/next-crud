@@ -6,8 +6,6 @@ import { Results } from '../components/Results'
 import { requests } from '../utils/requests'
 
 export default function Home({ results }: { results: any }) {
-  console.log(results)
-
   return (
     <div>
       <Head>
