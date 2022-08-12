@@ -13,6 +13,7 @@ export const Thumbnail = forwardRef(({ result }: IProps, ref) => {
   const BASE_POSTER_URL = "https://image.tmdb.org/t/p/original/"
 
   return (
+    // fix the ref error
     <div ref={ref} className="group cursor-pointer p-2 transiton duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
         <Image 
             layout="responsive"
