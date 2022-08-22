@@ -11,6 +11,8 @@ import {
     UserIcon
 } from "@heroicons/react/outline"
 
+import { LoginGithub } from './LoginGithub'
+
 export const Header = () => {
   return (
     <header className="flex flex-col sm:flex-row m-5 h-auto items-center justify-between">
@@ -20,7 +22,7 @@ export const Header = () => {
             <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
             <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
             <HeaderItem title="SEARCH" Icon={SearchIcon} />
-            <HeaderItem title="ACCOUNT" Icon={UserIcon} />
+            <LoginGithub title="ACCOUNT" Icon={UserIcon} />
         </div>
 
         <Image 
