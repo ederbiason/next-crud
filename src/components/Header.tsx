@@ -8,7 +8,9 @@ import {
     HomeIcon,
     LightningBoltIcon,
     SearchIcon,
-    UserIcon
+    UserIcon,
+    TicketIcon
+    
 } from "@heroicons/react/outline"
 
 import { LoginGithub } from './LoginGithub'
@@ -22,6 +24,7 @@ export const Header = () => {
             <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
             <HeaderItem title="COLLECTIONS" Icon={CollectionIcon} />
             <HeaderItem title="SEARCH" Icon={SearchIcon} />
+            <HeaderItem title="PLANS" Icon={TicketIcon} />
             <LoginGithub title="ACCOUNT" Icon={UserIcon} />
         </div>
 
