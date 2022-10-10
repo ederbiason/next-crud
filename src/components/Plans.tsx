@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import React from 'react'
 
 export const Plans = () => {
   return (
-    <div>
+    <Link href='/plans'>
         
-    </div>
+    </Link>
   )
 }
